@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/mdhl_2.css">
+    <title>Game Information - MDHL</title>
+</head>
+<body>
+    <header>
+        <div class="container_header">
+            <h1 class="title">Mighty Ducks Hockey League</h1>
+            <nav>
+                <ul class="nav_list">
+                    <li class="nav_list__item button"><a href="../index.html">Home</a></li>
+                    <li class="nav_list__item button"><a href="./aboutMDHL.html">About</a></li>
+                    <li class="nav_list__item button"><a href="./contactMDHL.html">contact</a></li>
+                    <li class="nav_list__item button"><a href="./rules.html">Rules</a></li>
+                    <li class="nav_list__item button"><a href="./game_info.html">Game Info</a></li>
+                    <li class="nav_list__item">Registration</li>
+                </ul>
+            </nav>
+        </div>
+        <div class="banner"></div>
+        <div class="title_main">
+            <h2>Game Information</h2>
+        </div>
+    </header>
+    <main class="container">
+        <div class="logo">
+            <img src="../assets/img/LogoMightyDucks-01.png" alt="">
+        </div>
+        <section class="mainContent game_info">
+            <h3>Registration Form</h3>
+            <form action="show_data.html" method=".GET">
+                <div class="container_field first">
+                    <!-- <div class="name_container">
+                        <label for="name">Player's First Name: </label><input type="text" id="name" required>
+                    </div> -->
+                    <label>Player's First Name: <input type="text" name="first_name" required></label>
+                    
+                    <label>Last Name: <input type="text" name="last_name" required></label>
+                    
+                    <label>Street Adress: <input type="text" name="adress" required></label>
+                    
+                    <label>City: <input type="text" name="city" required></label>
+                    
+                    <label>Zip Code: <input type="text" name="zip_code"></label>
+                    
+                    <label>Birth Date: <input type="date" name="birth_date" required></label>
+                    
+                    <div id="container_gender">
+                        <label for="gender">Gender: </label>
+                        <label>Female <input type="radio" id="female" name="gender" value="F" required> </label>
+                        <label>Male <input type="radio" id="male" name="gender" value="M" required> </label>
+                        <label>Prefer not to answer <input type="radio" id="not_answer" name="gender" value="N/A" required> </label>
+                        <!-- <label for="non-binary">Non-binary </label><input type="radio" id="non-binary" name="gender"> -->
+                    </div>
+                    <div id="container_grade">
+                        <label for="grade">Grade: </label>
+                        <!-- <select name="grade">
+                            <option value="Pre-School" selected>Pre-School</option>
+                            <option value="1th">1th</option>
+                            <option value="2nd">2nd</option>
+                            <option value="3rd">3rd</option>
+                            <option value="4th">4th</option>
+                            <option value="5th">5th</option>
+                        </select> -->
+                        <label><input type="radio" value="Pre-School" name="grade">Pre-School</label>
+                        <label><input type="radio" value="1th" name="grade">1th</label>
+                        <label><input type="radio" value="2nd" name="grade">2nd</label>
+                        <label><input type="radio" value="3rd" name="grade">3rd</label>
+                        <label><input type="radio" value="4th" name="grade">4th</label>
+                        <label><input type="radio" value="5th" name="grade">5th</label>
+                    </div>
+                </div>
+                <div class="container_field second">
+                        <h4>Which elementary school do you live near?</h4>
+                        <h4>Closest School</h4>
+                    <div class="container_options">
+                        <label><input type="radio" name="closest_school" value="AJ Katzenmaier" id="aj_katzenmaier">AJ Katzenmaier</label>
+                        <label><input type="radio" name="closest_school" value="Greenbay">Greenbay</label>
+                        <label><input type="radio" name="closest_school" value="Howard A Yeager">Howard A Yeager</label>
+                        <label><input type="radio" name="closest_school" value="Marjorie P Hart">Marjorie P Hart</label>
+                        <label><input type="radio" name="closest_school" value="North Elementary">North Elementary</label>
+                        <label><input type="radio" name="closest_school" value="South Elementary">South Elementary</label>
+                    </div>
+                </div>
+                <div class="container_field third">
+                    <h4>Ahat position(s) do you normally play? (check all that apply)</h4>
+                    <div class="container_options">
+                        <label><input type="checkbox" value="Forward" id="forward" name="position">Forward</label>
+                        <label><input type="checkbox" value="Defense" id="defense" name="position">Defense</label>
+                        <label><input type="checkbox" value="Midfield" id="midfield" name="position">Midfield</label>
+                        <label><input type="checkbox" value="Goalkeeper" id="goalkeeper" name="position">Goalkeeper</label>
+                    </div>
+                </div>
+                <div class="container_field fourth">
+                    <h4>Uniform Size</h4>
+                    <div class="container_options">
+                        <label><input type="checkbox" value="Youth Small" id="youth_small" name="uniform_size">Youth Small</label>
+                        <label><input type="checkbox" value="Youth Medium" id="youth_medium" name="uniform_size">Youth Medium</label>
+                        <label><input type="checkbox" value="Youth Large" id="youth_large" name="uniform_size">Youth Large</label>
+                        <label><input type="checkbox" value="Small" id="small" name="uniform_size">Small</label>
+                        <label><input type="checkbox" value="Medium" id="medium" name="uniform_size">Medium</label>
+                        <label><input type="checkbox" value="Large" id="large" name="uniform_size">Large</label>
+                        <label><input type="checkbox" value="Extra Large" id="extra_large" name="uniform_size">Extra Large</label>
+                    </div>
+                </div>
+                <div class="container_field fifth">
+                    <h4>Permission to play</h4>
+                    <p>I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Mighty Ducks Hockey League (MDHL). In reconizing the possibility of physical injury associated with hockey and in consideration for the "League" accepting the registrant for its their employees and associated personnel and volunteers, including the facilities used for registrant's participation in the programand/orbeing transported to or from MDHL sponsored activities, which transportation.</p>
+                    <p>By entering your name below, I herebyagree andautorizethe above. In addition, by signing below. I also acknowledge that I have read the cancellation policy and agree to its terms.</p>
+                    <label>Parent/Guardian Signature: <input type="text" name="signature" required></label>
+                    <label>Date: <input type="date" name="date" required></label>
+                    <input class="nav_list__item button" type="submit" name="submit" value="Submit">
+                </div>
+            </form>
+        </section> 
+    </main>
+</body>
+</html>

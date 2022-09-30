@@ -1,0 +1,361 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color:#ffffff;
+}
+
+header{
+    position: relative;
+}
+
+.container_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.title{
+    width: 50vw;
+    font-style: italic;
+    font-size: 3rem;
+}
+
+.nav_list{
+    position: absolute;
+    right: 0;
+    top: 10%;
+    list-style: none;
+    width: 50vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav_list__item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #70ad47;
+    width: 15%;
+    height: 2rem;
+    border: 1px solid black;
+    color: #ffffff;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.nav_list__item.button{
+    background-color: #4472c4;
+}
+
+.nav_list__item.button:hover{
+    cursor: pointer;
+    background-color: #449cc4;
+    transition: 200ms;
+}
+
+.nav_list__item > a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1rem;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    margin-top: calc(20% - 0.5rem);
+}
+
+.banner{
+    width: 100%;
+    height: 45vh;
+    background-image: url(../assets/img/design1_image2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.title_main{
+    background-color: #ffffff;
+    width: 100%;
+    height: 2.5rem;
+    text-align: center;
+    border: solid 1px;
+}
+
+.title_main h2{
+    height: 100%;
+    padding-top: 0.3rem;
+}
+
+.container{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+.logo img{
+    width: 10vw;
+    margin-left: 1rem;
+}
+
+.container_list{
+    list-style: none;
+    margin-top: 0.5rem;
+    width: 85%;
+}
+
+.container_list__item{
+    margin-bottom: 1rem;
+}
+
+.container_list__item > h3{
+    font-style: italic;
+}
+
+.container_list__item > p{
+    text-indent: 1rem;
+    padding-right: 4rem;
+}
+
+.contacto{
+    margin-top: 0.5rem;
+    width: 85%;
+}
+
+.contacto > p{
+    margin-bottom: 1rem;
+}
+
+/*RULES*/
+
+.mainContent{
+    width: calc(90vw - 4rem);
+    margin: 0 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.titles_main{
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.rules_list{
+    list-style: none;
+    width: 70%;
+    margin: 0 15%;
+}
+
+.rules_list > li{
+    margin-bottom: 1.5rem;
+}
+
+.rules_list__item > h4{
+    margin-bottom: 0.5rem;
+}
+
+.regulations_list{
+    list-style-position: inside;
+}
+
+.regulations_list__item{
+    margin-bottom: 1rem;
+}
+
+.regulations_list__item > h5{
+    font-size: 1rem;
+}
+
+.regulations_list__item > h5 , .regulations_list__item > p{
+    display: inline;
+}
+
+.regulations_list__item > ol{
+    list-style-type: lower-alpha;
+}
+
+.regulations_list__item::marker{
+    font-weight: bold;
+}
+
+.allplay_list{
+    list-style-type: circle;
+    list-style-position: inside;
+    margin-left: 2rem;
+}
+
+/*Game info*/
+
+.mainContent.game_info{
+    align-items: center;
+    width: calc(80vw - 4rem);
+    margin-right: 4rem;
+}
+
+.info_titles{
+    width: 70%;
+}
+
+.info_titles > h3{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.info_titles > h4 , .info_titles > p{
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+.info_titles > p{
+    text-decoration: underline;
+}
+
+.schedule_table{
+    width: 100%;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+.schedule_table > thead > tr > th{
+    text-align: start;
+}
+
+.first_elem{
+    text-align: center;
+    padding-right: 2.5rem;
+}
+
+.schedule_table__row > td{
+    line-height: 2rem;
+}
+
+.bottom_information > div{
+    margin-bottom: 2rem;
+}
+
+.bottom_information > div > p{
+    margin-bottom: 0.5rem;
+}
+
+.bottom_information > div > div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom_information__bold {
+    font-weight: bold;
+}
+
+.map , #map{
+    text-align: center;
+}
+
+.map iframe{
+    width: 100%;
+    height: 30vh;
+    margin: 1rem 0;
+}
+
+/*registration*/
+
+.container_field , .container_options{
+    margin: 1.5rem 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+input{
+    border: none;
+    border-bottom: 2px solid;
+}
+/* .name_container{
+    width: 49%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+}
+.name_container > input{
+    width: calc(100% - 10rem);
+} */
+
+.first >label , #container_gender , #container_grade{
+    width: 49%;
+    margin-bottom: 1rem;
+}
+#container_grade , #container_gender{
+    display: flex;
+    justify-content: space-between;
+}
+.first > label:first-child > input{
+    width: calc(100% - 10rem);
+}
+.first > label:nth-child(2) > input{
+    width: calc(100% - 5rem);
+}
+.first > label:nth-child(3){
+    width: 100%;
+}
+.first > label:nth-child(3) > input{
+    width: calc(100% - 6rem);
+}
+.first > label:nth-child(4) > input{
+    width: calc(100% - 2.5rem);
+}
+.first > label:nth-child(5) > input{
+    width: calc(100% - 4.5rem);
+}
+.first > label:nth-child(6) > input{
+    width: calc(100% - 5rem);
+}
+
+.container_field.second , .container_field.third , .container_field.fourth , .container_field.fifth{
+    flex-direction: column;
+    height: 25%;
+}
+.container_field.third{
+    height: 15%;
+}
+.container_field.fourth{
+    height: 15%;
+}
+
+.container_options{
+    width: 60%;
+    height: 50%;
+    flex-direction: column;
+    margin-left: 0;
+    margin-right: 0;
+}
+.container_field.fourth > .container_options{
+    justify-content: flex-start;
+    height: 75%;
+    margin: 0;
+}
+.container_field.second > .container_options > label{
+    height: 29%;
+}
+.container_field.third > .container_options > label{
+    height: 35%;
+}
+.container_field.fourth > .container_options > label{
+    height: 25%;
+}
+input.button{
+    margin-bottom: 1rem;
+}
+
+.container_grid{
+    display: grid;
+  grid-template-columns: 20px 150px 20px 150px;
+      grid-row: auto auto;
+    grid-column-gap: 0px;
+    grid-row-gap: 5px;
+}
+
+/* 
+input[type=radio]
+input[type=radio]:checked */
